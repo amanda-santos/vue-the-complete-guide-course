@@ -13,16 +13,14 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    x
-    <section id="assignment">
-      <h2>{{ name }}</h2>
-      <p>{{ age }} years</p>
-      <p>{{ age + 5 }} in five years</p>
-      <p>Favorite Number: {{ Math.random() }}</p>
-      <div>
-        <img v-bind:src="image" />
-      </div>
-      <input type="text" v-bind:value="name" />
+    <header>
+      <h1>Vue Events</h1>
+    </header>
+    <section id="events">
+      <h2>Events in Action</h2>
+      <button v-on:click="add">Add</button>
+      <button v-on:click="reduce">Reduce</button>
+      <p>Result: {{ counter }}</p>
     </section>
   </body>
 </html>
